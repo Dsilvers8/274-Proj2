@@ -1,0 +1,94 @@
+
+public class Card {
+	private char suit;
+	private char rank;
+	
+	public Card (char r, char s) 
+	{
+	rank = r;
+	suit = s;
+	}
+	public void display()	{
+		System.out.printf("%c of %c", rank, suit);
+	}
+	/*public int getValue()
+	{
+		
+	}
+	public char getRank()
+	{
+		
+	}
+	public char getSuit()	
+	{
+		
+	}
+	 
+	}*/
+}
+
+import java.util.Random;
+
+public class Deck {
+	private Card[] deck; //makes array of cards
+	private int top;
+	public static void main(String[] args)
+	{
+		Deck myDeck = new Deck();
+	}
+	public Deck()
+	{
+		char [] suits = "'S','D','H','C'";
+		char [] ranks = " 'A','2','3','4','5','6','7','8','9','10','J','Q','K'";
+		Card [] deck = new Card [52];
+		top = 0;	//the top card in the deck
+		
+		int count = 0;
+		Card C1;
+		for (int s = 0; s < suits.length(); s++)
+			for (int r = 0; r < ranks.length(); r++)
+			{
+				C1 = new Card(ranks.charAt(r), suits.charAt(s));
+				C1 = data[count++] ;
+			}
+	}
+	
+	public void display()
+	{
+	
+	}
+
+	public void shuffle()
+	{
+		
+	}
+	
+	public Card deal()
+	{
+		return myDeck(top++); 
+	
+	
+	}
+}
+
+import java.util.Scanner;
+public class Menu {
+
+	public static void myMenu() {
+		System.out.print("Welcome to Soltaire Prime!\nPlease select an option:");
+		System.out.print("\n1) New Deck\n2) Display Deck\n3) Shuffle Deck\n4) Play Solitaire Prime\n5) Exit");
+		
+		Scanner in = new Scanner(System.in);
+		int choice = in.nextInt();
+	
+		do {
+			switch (choice)
+			{
+			case 1: 
+			}
+		}
+	}
+	
+	
+	
+}
